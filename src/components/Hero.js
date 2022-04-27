@@ -2,7 +2,7 @@ import React from 'react'
 import {Box, Flex, Text, Image, Spacer, Input, Button} from '@chakra-ui/react'
 import girlImg from '../assets/girl.png'
 
-const Home = () => {
+const Hero = () => {
     return (
         <Box>
             <Flex flexDirection={{base:'column', md:'row'}}>
@@ -27,4 +27,4 @@ const Home = () => {
 } 
 
 
-export default Home
+export default Hero
