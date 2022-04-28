@@ -9,7 +9,7 @@ const Content = () => {
     return(
         <Box>
             <Center mb='10'>
-                <Text fontSize='3xl' fontWeight='bold'>Why you should use <span>Glossary</span></Text>
+                <Text fontSize='3xl' fontWeight='bold' color='purple.400'>Why you should use <span>Glossary</span></Text>
             </Center>
             <Flex flexDirection={{base:'column', md:'row'}}>
                 <Box>

@@ -8,8 +8,7 @@ import {
     useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
-  import { ReactNode } from 'react';
+  import { FaInstagram, FaTwitter } from 'react-icons/fa';
   
   const SocialButton = ({
     children,
@@ -43,7 +42,6 @@ import {
     return (
       <Box
       mt='10' mb='5'
-        bg={useColorModeValue('gray.50', 'gray.900')}
         color={useColorModeValue('gray.700', 'gray.200')}>
         <Container
           as={Stack}

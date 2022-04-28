@@ -26,7 +26,7 @@ const Navbar = () => {
             fontSize="lg"
             aria-label={`Switch to ${text} mode`}
             variant="ghost"
-            color="current"
+            color="dark"
             marginLeft="2"
             onClick={toggleColorMode}
             _focus={{boxShadow: 'none'}}
