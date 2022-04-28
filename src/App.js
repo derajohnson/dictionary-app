@@ -3,6 +3,7 @@ import {Box} from '@chakra-ui/react'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar';
 import Content from './components/Content';
+import Testimonials from './components/Testimonials';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <Hero />
       <Content />
+      <Testimonials />
     </Box>
   );
 }
