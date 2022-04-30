@@ -1,8 +1,11 @@
-import React from 'react'
-import {Box, Flex, Text, Image, Spacer, Input, Button} from '@chakra-ui/react'
+import React, {useState} from 'react'
+import axios from 'axios'
+import {Box, Flex, Text, Image, Spacer} from '@chakra-ui/react'
+import SearchInput from './SearchInput'
 import girlImg from '../assets/girl.png'
 
 const Hero = () => {
+
     return (
         <Box>
             <Flex flexDirection={{base:'column', md:'row'}}>
@@ -10,12 +13,7 @@ const Hero = () => {
                     <Text fontSize='3xl' >
                         Search the meaning of any word. Anyday. Anytime. 
                     </Text>
-                    <form action="">
-                        <Input placeholder='Search for a word' my='5'/>
-                        <Button bgColor='purple.400' color='white' textAlign={{base: 'center', md: 'left'}}>
-                            Search
-                        </Button>
-                    </form>
+                 <SearchInput/>
                 </Box>
                 <Spacer />
                 <Box>
