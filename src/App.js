@@ -32,34 +32,35 @@ function App () {
 
   return (
     <Box mt="5" mx="10">
-      {isLoadingComplete
-        ? <BrowserRouter>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<Home/>}/> 
-            <Route path='/search' element={<SearchedWord/>}/>
-            </Routes>
-          
-          </BrowserRouter>
-        : randomWord.length === 0
-            ? <Box> </Box>
-            : <Flex
-                direction="column"
-                justifyContent="center"
-                h="100vh"
-                alignItems="center"
-              >
-                <Box mb="4">
-                  Word: {randomWord.word}
-                </Box>
+      <BrowserRouter>
+        {isLoadingComplete
+          ? <Box>
+              <Navbar />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/search" element={<SearchedWord />} />
+              </Routes>
+            </Box>
+          : randomWord.length === 0
+              ? <Box> </Box>
+              : <Flex
+                  direction="column"
+                  justifyContent="center"
+                  h="100vh"
+                  alignItems="center"
+                >
+                  <Box mb="4">
+                    Word: {randomWord.word}
+                  </Box>
 
-                <Box mb="4">
-                  Definition: {randomWord.definition}
-                </Box>
-                <Box>
-                  Pronunciation: {randomWord.pronunciation}
-                </Box>
-              </Flex>}
+                  <Box mb="4">
+                    Definition: {randomWord.definition}
+                  </Box>
+                  <Box>
+                    Pronunciation: {randomWord.pronunciation}
+                  </Box>
+                </Flex>}
+      </BrowserRouter>
 
     </Box>
   );
